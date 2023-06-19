@@ -13,7 +13,7 @@ const Detail = () => {
   }, []);
 
   const getProductById = async () => {
-    const response = await axios.get(`localhost:27017${id}`);
+    const response = await axios.get(`https://quiet-bonbon-8cb865.netlify.app/products${id}`);
     setProduct(response.data);
   }
   

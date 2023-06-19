@@ -14,7 +14,7 @@ const Tambah = () => {
   const saveProduct = async(e) => {
     e.preventDefault();
     try {
-      await axios.post('mongodb://localhost:27017', {
+      await axios.post('https://quiet-bonbon-8cb865.netlify.app/', {
         name,
         price,
         stock,

@@ -29,7 +29,7 @@ const Edit = () => {
   const updateProduct = async(e) => {
     e.preventDefault();
     try {
-      await axios.patch(`https://good-teal-haddock-veil.cyclic.app/products/${id}`, {
+      await axios.patch(`https://quiet-bonbon-8cb865.netlify.app/${id}`, {
         name,
         price,
         stock,
