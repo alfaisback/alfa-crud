@@ -14,7 +14,7 @@ const Tambah = () => {
   const saveProduct = async(e) => {
     e.preventDefault();
     try {
-      await axios.post('https://quiet-bonbon-8cb865.netlify.app/', {
+      await axios.post(`https://red-real-greyhound.cyclic.app/products`, {
         name,
         price,
         stock,

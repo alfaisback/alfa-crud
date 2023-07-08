@@ -17,8 +17,7 @@ const Edit = () => {
   },[]);
 
   const getProductById = async() => {
-    const response = await axios.get(`localhost:27017
-
+    const response = await axios.get(`https://red-real-greyhound.cyclic.app/products/
     ${id}`);
     setName(response.data.name);
     setPrice(response.data.price);
@@ -29,7 +28,7 @@ const Edit = () => {
   const updateProduct = async(e) => {
     e.preventDefault();
     try {
-      await axios.patch(`https://quiet-bonbon-8cb865.netlify.app/${id}`, {
+      await axios.patch(`https://red-real-greyhound.cyclic.app/products/${id}`, {
         name,
         price,
         stock,

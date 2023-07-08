@@ -13,7 +13,7 @@ const Detail = () => {
   }, []);
 
   const getProductById = async () => {
-    const response = await axios.get(`https://quiet-bonbon-8cb865.netlify.app/products${id}`);
+    const response = await axios.get(`https://red-real-greyhound.cyclic.app/products/${id}`);
     setProduct(response.data);
   }
   
